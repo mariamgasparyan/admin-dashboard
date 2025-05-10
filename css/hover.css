@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    .users-tab__link:hover:after,
+    .menu__link:hover:after {
+        width: 100%;
+    }
+
+    .users-tab__link:hover,
+    .menu__link:hover {
+        color: var(--light-blue);
+    }
+
+    .avatar:hover {
+        border-color: var(--light-blue);
+    }
+
+    .sidebar__link:not(.sidebar__link--active):hover {
+        border-color: var(--light-grayscale-border);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    #hide-btn:hover {
+        left: -45px;
+    }
+
+    .button--primary:not(.button--disabled):not([disabled]):not(.button--active):hover {
+        background-color: var(--light-blue-hover);
+    }
+    
+    .button--secondary:not(.button--disabled):not(.button--active):hover {
+        background-color: var(--background-secondary);
+    }
+}

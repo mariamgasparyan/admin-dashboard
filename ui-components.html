@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="css/bootstrap5.3.0.min.css">
+    <link rel="stylesheet" href="css/bootstrap.grid.min.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .ui-components {
+            padding: 40px;
+        }
+
+        .ui-components > div {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 0 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui-components">
+        <h4>Buttons</h4>
+        <h6>Sizes</h6>
+        <div>
+            <button class="button button--primary button--lg">large</button>
+            <a href="#" class="button button--primary button--lg">large</a>
+            <button class="button button--primary button--md">medium</button>
+            <a href="#" class="button button--primary button--md">medium</a>
+            <button class="button button--primary button--sm">small</button>
+            <a href="#" class="button button--primary button--sm">small</a>
+        </div>
+        <div>
+            <button class="button button--secondary button--lg">large</button>
+            <a href="#" class="button button--secondary button--lg">large</a>
+            <button class="button button--secondary button--md">medium</button>
+            <a href="#" class="button button--secondary button--md">medium</a>
+            <button class="button button--secondary button--sm">small</button>
+            <a href="#" class="button button--secondary button--sm">small</a>
+        </div>
+        
+        <h6>Type</h6>
+        <div>
+            <button class="button button--primary button--md">primary</button>
+            <a href="#" class="button button--primary button--md">primary</a>
+            <button class="button button--secondary button--md">secondary</button>
+            <a href="#" class="button button--secondary button--md">secondary</a>
+        </div>
+
+        <h6>State</h6>
+        <div>
+            <button class="button button--primary button--md" disabled>primary disabled</button>
+            <a href="#" class="button button--primary button--md button--disabled">primary disabled</a>
+            <button class="button button--secondary button--md" disabled>secondary disabled</button>
+            <a href="#" class="button button--secondary button--md button--disabled">secondary disabled</a>
+        </div>
+        <div>
+            <button class="button button--primary button--md button--active">primary active</button>
+            <a href="#" class="button button--primary button--md button--active">primary active</a>
+            <button class="button button--secondary button--md button--active">secondary active</button>
+            <a href="#" class="button button--secondary button--md button--active">secondary active</a>
+        </div>
+        
+        <div>
+            <button type="button" class="button button--md button--icon button--primary">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3333 1.66669C16.0947 1.66669 18.3333 3.90526 18.3333 6.66669V13.3334C18.3333 16.0948 16.0947 18.3334 13.3333 18.3334H6.66663C3.9052 18.3334 1.66663 16.0948 1.66663 13.3334V6.66669C1.66663 3.90526 3.9052 1.66669 6.66663 1.66669H13.3333ZM12.5 4.16669H7.49996C5.7148 4.16669 4.25739 5.56999 4.17071 7.33365L4.16663 7.50002V12.5C4.16663 14.2852 5.56993 15.7426 7.33359 15.8293L7.49996 15.8334H12.5C14.2851 15.8334 15.7425 14.43 15.8292 12.6664L15.8333 12.5V7.50002C15.8333 5.71486 14.43 4.25745 12.6663 4.17077L12.5 4.16669Z"/>
+                </svg>                          
+            </button>
+            <button type="button" class="button button--md button--icon button--secondary">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3333 1.66669C16.0947 1.66669 18.3333 3.90526 18.3333 6.66669V13.3334C18.3333 16.0948 16.0947 18.3334 13.3333 18.3334H6.66663C3.9052 18.3334 1.66663 16.0948 1.66663 13.3334V6.66669C1.66663 3.90526 3.9052 1.66669 6.66663 1.66669H13.3333ZM12.5 4.16669H7.49996C5.7148 4.16669 4.25739 5.56999 4.17071 7.33365L4.16663 7.50002V12.5C4.16663 14.2852 5.56993 15.7426 7.33359 15.8293L7.49996 15.8334H12.5C14.2851 15.8334 15.7425 14.43 15.8292 12.6664L15.8333 12.5V7.50002C15.8333 5.71486 14.43 4.25745 12.6663 4.17077L12.5 4.16669Z"/>
+                </svg>                    
+            </button>
+        </div>
+        
+        <div>
+            <button type="button" class="button button--md button--icon button--circle button--primary">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3333 1.66669C16.0947 1.66669 18.3333 3.90526 18.3333 6.66669V13.3334C18.3333 16.0948 16.0947 18.3334 13.3333 18.3334H6.66663C3.9052 18.3334 1.66663 16.0948 1.66663 13.3334V6.66669C1.66663 3.90526 3.9052 1.66669 6.66663 1.66669H13.3333ZM12.5 4.16669H7.49996C5.7148 4.16669 4.25739 5.56999 4.17071 7.33365L4.16663 7.50002V12.5C4.16663 14.2852 5.56993 15.7426 7.33359 15.8293L7.49996 15.8334H12.5C14.2851 15.8334 15.7425 14.43 15.8292 12.6664L15.8333 12.5V7.50002C15.8333 5.71486 14.43 4.25745 12.6663 4.17077L12.5 4.16669Z"/>
+                </svg>                          
+            </button>
+            <button type="button" class="button button--md button--icon button--circle button--secondary">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3333 1.66669C16.0947 1.66669 18.3333 3.90526 18.3333 6.66669V13.3334C18.3333 16.0948 16.0947 18.3334 13.3333 18.3334H6.66663C3.9052 18.3334 1.66663 16.0948 1.66663 13.3334V6.66669C1.66663 3.90526 3.9052 1.66669 6.66663 1.66669H13.3333ZM12.5 4.16669H7.49996C5.7148 4.16669 4.25739 5.56999 4.17071 7.33365L4.16663 7.50002V12.5C4.16663 14.2852 5.56993 15.7426 7.33359 15.8293L7.49996 15.8334H12.5C14.2851 15.8334 15.7425 14.43 15.8292 12.6664L15.8333 12.5V7.50002C15.8333 5.71486 14.43 4.25745 12.6663 4.17077L12.5 4.16669Z"/>
+                </svg>                    
+            </button>
+        </div>
+        <div></div>
+        <h4>Input</h4>
+        <h6>Sizes</h6>
+        
+        <div>
+            <input type="text" placeholder="large" class="input-text input-text--lg">
+            <input type="text" placeholder="medium" class="input-text input-text--md">
+            <input type="text" placeholder="small" class="input-text input-text--sm">
+        </div>
+
+        <h6>State</h6>
+        <div>
+            <input type="text" placeholder="disabled" class="input-text input-text--md" disabled>
+            <input type="text" placeholder="focused" class="input-text input-text--md input-text--focused">
+        </div>
+    </div>
+    <script src="js/bootstrap5.3.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <link rel="stylesheet" href="css/bootstrap5.3.0.min.css">
+    <link rel="stylesheet" href="css/bootstrap.grid.min.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <main class="main grid main--users" id="main">
+        <aside class="sidebar d-flex justify-content-center">
+            <ul class="sidebar__list list-unstyled d-flex flex-column">
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link d-inline-flex">
+                        <svg class="sidebar__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99967 17.3334C7.26634 17.3334 6.66634 17.9334 6.66634 18.6667C6.66634 19.4 7.26634 20 7.99967 20C8.73301 20 9.33301 19.4 9.33301 18.6667C9.33301 17.9334 8.73301 17.3334 7.99967 17.3334ZM7.99967 22.6667C7.26634 22.6667 6.66634 23.2667 6.66634 24C6.66634 24.7334 7.26634 25.3334 7.99967 25.3334C8.73301 25.3334 9.33301 24.7334 9.33301 24C9.33301 23.2667 8.73301 22.6667 7.99967 22.6667ZM7.99967 12C7.26634 12 6.66634 12.6 6.66634 13.3334C6.66634 14.0667 7.26634 14.6667 7.99967 14.6667C8.73301 14.6667 9.33301 14.0667 9.33301 13.3334C9.33301 12.6 8.73301 12 7.99967 12ZM3.99967 12.6667C3.62634 12.6667 3.33301 12.96 3.33301 13.3334C3.33301 13.7067 3.62634 14 3.99967 14C4.37301 14 4.66634 13.7067 4.66634 13.3334C4.66634 12.96 4.37301 12.6667 3.99967 12.6667ZM7.99967 6.66671C7.26634 6.66671 6.66634 7.26671 6.66634 8.00004C6.66634 8.73337 7.26634 9.33337 7.99967 9.33337C8.73301 9.33337 9.33301 8.73337 9.33301 8.00004C9.33301 7.26671 8.73301 6.66671 7.99967 6.66671ZM27.9997 14C28.373 14 28.6663 13.7067 28.6663 13.3334C28.6663 12.96 28.373 12.6667 27.9997 12.6667C27.6263 12.6667 27.333 12.96 27.333 13.3334C27.333 13.7067 27.6263 14 27.9997 14ZM18.6663 9.33337C19.3997 9.33337 19.9997 8.73337 19.9997 8.00004C19.9997 7.26671 19.3997 6.66671 18.6663 6.66671C17.933 6.66671 17.333 7.26671 17.333 8.00004C17.333 8.73337 17.933 9.33337 18.6663 9.33337ZM18.6663 4.66671C19.0397 4.66671 19.333 4.37337 19.333 4.00004C19.333 3.62671 19.0397 3.33337 18.6663 3.33337C18.293 3.33337 17.9997 3.62671 17.9997 4.00004C17.9997 4.37337 18.293 4.66671 18.6663 4.66671ZM3.99967 18C3.62634 18 3.33301 18.2934 3.33301 18.6667C3.33301 19.04 3.62634 19.3334 3.99967 19.3334C4.37301 19.3334 4.66634 19.04 4.66634 18.6667C4.66634 18.2934 4.37301 18 3.99967 18ZM13.333 27.3334C12.9597 27.3334 12.6663 27.6267 12.6663 28C12.6663 28.3734 12.9597 28.6667 13.333 28.6667C13.7063 28.6667 13.9997 28.3734 13.9997 28C13.9997 27.6267 13.7063 27.3334 13.333 27.3334ZM13.333 4.66671C13.7063 4.66671 13.9997 4.37337 13.9997 4.00004C13.9997 3.62671 13.7063 3.33337 13.333 3.33337C12.9597 3.33337 12.6663 3.62671 12.6663 4.00004C12.6663 4.37337 12.9597 4.66671 13.333 4.66671ZM13.333 9.33337C14.0663 9.33337 14.6663 8.73337 14.6663 8.00004C14.6663 7.26671 14.0663 6.66671 13.333 6.66671C12.5997 6.66671 11.9997 7.26671 11.9997 8.00004C11.9997 8.73337 12.5997 9.33337 13.333 9.33337ZM13.333 16.6667C12.2263 16.6667 11.333 17.56 11.333 18.6667C11.333 19.7734 12.2263 20.6667 13.333 20.6667C14.4397 20.6667 15.333 19.7734 15.333 18.6667C15.333 17.56 14.4397 16.6667 13.333 16.6667ZM23.9997 17.3334C23.2663 17.3334 22.6663 17.9334 22.6663 18.6667C22.6663 19.4 23.2663 20 23.9997 20C24.733 20 25.333 19.4 25.333 18.6667C25.333 17.9334 24.733 17.3334 23.9997 17.3334ZM23.9997 22.6667C23.2663 22.6667 22.6663 23.2667 22.6663 24C22.6663 24.7334 23.2663 25.3334 23.9997 25.3334C24.733 25.3334 25.333 24.7334 25.333 24C25.333 23.2667 24.733 22.6667 23.9997 22.6667ZM23.9997 12C23.2663 12 22.6663 12.6 22.6663 13.3334C22.6663 14.0667 23.2663 14.6667 23.9997 14.6667C24.733 14.6667 25.333 14.0667 25.333 13.3334C25.333 12.6 24.733 12 23.9997 12ZM23.9997 6.66671C23.2663 6.66671 22.6663 7.26671 22.6663 8.00004C22.6663 8.73337 23.2663 9.33337 23.9997 9.33337C24.733 9.33337 25.333 8.73337 25.333 8.00004C25.333 7.26671 24.733 6.66671 23.9997 6.66671ZM27.9997 18C27.6263 18 27.333 18.2934 27.333 18.6667C27.333 19.04 27.6263 19.3334 27.9997 19.3334C28.373 19.3334 28.6663 19.04 28.6663 18.6667C28.6663 18.2934 28.373 18 27.9997 18ZM18.6663 22.6667C17.933 22.6667 17.333 23.2667 17.333 24C17.333 24.7334 17.933 25.3334 18.6663 25.3334C19.3997 25.3334 19.9997 24.7334 19.9997 24C19.9997 23.2667 19.3997 22.6667 18.6663 22.6667ZM18.6663 27.3334C18.293 27.3334 17.9997 27.6267 17.9997 28C17.9997 28.3734 18.293 28.6667 18.6663 28.6667C19.0397 28.6667 19.333 28.3734 19.333 28C19.333 27.6267 19.0397 27.3334 18.6663 27.3334ZM13.333 11.3334C12.2263 11.3334 11.333 12.2267 11.333 13.3334C11.333 14.44 12.2263 15.3334 13.333 15.3334C14.4397 15.3334 15.333 14.44 15.333 13.3334C15.333 12.2267 14.4397 11.3334 13.333 11.3334ZM13.333 22.6667C12.5997 22.6667 11.9997 23.2667 11.9997 24C11.9997 24.7334 12.5997 25.3334 13.333 25.3334C14.0663 25.3334 14.6663 24.7334 14.6663 24C14.6663 23.2667 14.0663 22.6667 13.333 22.6667ZM18.6663 16.6667C17.5597 16.6667 16.6663 17.56 16.6663 18.6667C16.6663 19.7734 17.5597 20.6667 18.6663 20.6667C19.773 20.6667 20.6663 19.7734 20.6663 18.6667C20.6663 17.56 19.773 16.6667 18.6663 16.6667ZM18.6663 11.3334C17.5597 11.3334 16.6663 12.2267 16.6663 13.3334C16.6663 14.44 17.5597 15.3334 18.6663 15.3334C19.773 15.3334 20.6663 14.44 20.6663 13.3334C20.6663 12.2267 19.773 11.3334 18.6663 11.3334Z"/>
+                        </svg>    
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link d-inline-flex">
+                        <svg class="sidebar__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1667 3.5H5.83333C4.55 3.5 3.5 4.55 3.5 5.83333V22.1667C3.5 23.45 4.55 24.5 5.83333 24.5H22.1667C23.45 24.5 24.5 23.45 24.5 22.1667V5.83333C24.5 4.55 23.45 3.5 22.1667 3.5ZM9.33333 19.8333C8.69167 19.8333 8.16667 19.3083 8.16667 18.6667V12.8333C8.16667 12.1917 8.69167 11.6667 9.33333 11.6667C9.975 11.6667 10.5 12.1917 10.5 12.8333V18.6667C10.5 19.3083 9.975 19.8333 9.33333 19.8333ZM14 19.8333C13.3583 19.8333 12.8333 19.3083 12.8333 18.6667V9.33333C12.8333 8.69167 13.3583 8.16667 14 8.16667C14.6417 8.16667 15.1667 8.69167 15.1667 9.33333V18.6667C15.1667 19.3083 14.6417 19.8333 14 19.8333ZM18.6667 19.8333C18.025 19.8333 17.5 19.3083 17.5 18.6667V16.3333C17.5 15.6917 18.025 15.1667 18.6667 15.1667C19.3083 15.1667 19.8333 15.6917 19.8333 16.3333V18.6667C19.8333 19.3083 19.3083 19.8333 18.6667 19.8333Z"/>
+                        </svg>     
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link sidebar__link--active d-inline-flex">
+                        <svg class="sidebar__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.333 7.00004H18.6663V4.66671C18.6663 3.37171 17.628 2.33337 16.333 2.33337H11.6663C10.3713 2.33337 9.33301 3.37171 9.33301 4.66671V7.00004H4.66634C3.37134 7.00004 2.34467 8.03837 2.34467 9.33337L2.33301 22.1667C2.33301 23.4617 3.37134 24.5 4.66634 24.5H23.333C24.628 24.5 25.6663 23.4617 25.6663 22.1667V9.33337C25.6663 8.03837 24.628 7.00004 23.333 7.00004ZM16.333 7.00004H11.6663V4.66671H16.333V7.00004Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link d-inline-flex">
+                        <svg class="sidebar__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3547 5.35496C11.9113 4.91163 11.3163 4.66663 10.698 4.66663H4.66634C3.38301 4.66663 2.34467 5.71663 2.34467 6.99996L2.33301 21C2.33301 22.2833 3.38301 23.3333 4.66634 23.3333H23.333C24.6163 23.3333 25.6663 22.2833 25.6663 21V9.33329C25.6663 8.04996 24.6163 6.99996 23.333 6.99996H13.9997L12.3547 5.35496Z"/>
+                        </svg>                                                         
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link d-inline-flex">
+                        <svg class="sidebar__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1049 3.39495C11.7599 1.04995 8.24822 0.571613 5.42488 1.94828L9.65988 6.18328C10.1149 6.63828 10.1149 7.37328 9.65988 7.82828L7.80488 9.68328C7.34988 10.1499 6.61488 10.1499 6.15988 9.68328L1.92488 5.44828C0.559882 8.28328 1.03822 11.7716 3.38322 14.1166C5.55322 16.2866 8.72655 16.8583 11.4215 15.8433L20.7082 25.1299C21.9099 26.3316 23.8465 26.3316 25.0365 25.1299C26.2382 23.9283 26.2382 21.9916 25.0365 20.8016L15.7965 11.5499C16.8699 8.81995 16.3099 5.59995 14.1049 3.39495Z"/>
+                        </svg>     
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="#" class="sidebar__link d-inline-flex">
+                        <svg class="sidebar__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.333 15.1667H3.49967C2.85801 15.1667 2.33301 15.6917 2.33301 16.3333V23.3333C2.33301 23.975 2.85801 24.5 3.49967 24.5H23.333C23.9747 24.5 24.4997 23.975 24.4997 23.3333V16.3333C24.4997 15.6917 23.9747 15.1667 23.333 15.1667ZM23.333 3.5H3.49967C2.85801 3.5 2.33301 4.025 2.33301 4.66667V11.6667C2.33301 12.3083 2.85801 12.8333 3.49967 12.8333H23.333C23.9747 12.8333 24.4997 12.3083 24.4997 11.6667V4.66667C24.4997 4.025 23.9747 3.5 23.333 3.5Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <header class="header">
+            <div class="header-inner d-flex align-items-center full-height justify-content-between">
+                <nav class="menu full-height">
+                    <div class="menu-burger d-md-none d-block">
+                        <span class="menu-burger__left"></span>
+                        <span class="menu-burger__right"></span>
+                    </div>
+                    <ul class="menu__list list-unstyled d-none d-md-flex full-height" id="menu-list">
+                        <li class="menu__item full-height">
+                            <a href="#" class="menu__link d-flex d-md-inline-flex align-items-center text-decoration-none full-height font-inter-md">
+                                Company
+                            </a>
+                        </li>
+                        <li class="menu__item full-height">
+                            <a href="#" class="menu__link menu__link--active d-flex d-md-inline-flex align-items-center text-decoration-none full-height font-inter-md">
+                                Users
+                            </a>
+                        </li>
+                        <li class="menu__item full-height">
+                            <a href="#" class="menu__link d-flex d-md-inline-flex align-items-center text-decoration-none full-height font-inter-md">
+                                Expense Centres
+                            </a>
+                        </li>
+                        <li class="menu__item full-height">
+                            <a href="#" class="menu__link d-flex d-md-inline-flex align-items-center text-decoration-none full-height font-inter-md">
+                                Currency Exchange
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__right d-flex">
+                    <a href="#" class="button button--primary button--md button--deposit" id="deposit">Deposit</a>
+                    <a href="#" class="notification text-decoration-none d-inline-flex align-items-center">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.667 3.33337H3.33366C2.41699 3.33337 1.66699 4.08337 1.66699 5.00004V15C1.66699 15.9167 2.41699 16.6667 3.33366 16.6667H16.667C17.5837 16.6667 18.3337 15.9167 18.3337 15V5.00004C18.3337 4.08337 17.5837 3.33337 16.667 3.33337ZM16.3337 6.87504L10.8837 10.2834C10.342 10.625 9.65866 10.625 9.11699 10.2834L3.66699 6.87504C3.45866 6.74171 3.33366 6.51671 3.33366 6.27504C3.33366 5.71671 3.94199 5.38337 4.41699 5.67504L10.0003 9.16671L15.5837 5.67504C16.0587 5.38337 16.667 5.71671 16.667 6.27504C16.667 6.51671 16.542 6.74171 16.3337 6.87504Z" fill="#969696"/>
+                        </svg>
+                        <span class="notification__text font-inter-md">Messages</span>
+                        <span class="notification__info font-inter-md d-inline-flex align-items-center">3</span>
+                    </a>
+                    <div role="button" class="header-user d-inline-flex align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="header-user-pic header-user-pic--active">
+                            <div class="header-user-pic__inner">
+                                <img src="images/temp/avatar-7.png" alt="">
+                            </div>
+                        </div>
+                        <span class="header-user__name header-user__name--active font-inter-md">
+                            James Smith
+                        </span>
+                        <svg class="header-user__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41289 11.3815L11.0199 14.9885C11.563 15.5316 12.4404 15.5316 12.9835 14.9885L16.5905 11.3815C17.4679 10.5041 16.8412 9 15.6017 9H8.38776C7.14829 9 6.53552 10.5041 7.41289 11.3815Z" fill="#969696"/>
+                        </svg>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">lorem ipsum1</button></li>
+                        <li><button class="dropdown-item" type="button">lorem ipsum1</button></li>
+                        <li><button class="dropdown-item" type="button">lorem ipsum1</button></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="search">
+            <h3 class="search__title text-uppercase">Users</h3>
+            <form action="#" method="get" class="search-form">
+                <input class="input-text input-text--md search-form__input" type="search" placeholder="Search">
+                <svg class="search-form__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9162 11.6667H12.2579L12.0245 11.4417C13.0245 10.275 13.5412 8.68337 13.2579 6.9917C12.8662 4.67503 10.9329 2.82503 8.59955 2.5417C5.07454 2.10837 2.10788 5.07503 2.54121 8.60003C2.82454 10.9334 4.67454 12.8667 6.99121 13.2584C8.68288 13.5417 10.2745 13.025 11.4412 12.025L11.6662 12.2584V12.9167L15.2079 16.4584C15.5495 16.8 16.1079 16.8 16.4495 16.4584C16.7912 16.1167 16.7912 15.5584 16.4495 15.2167L12.9162 11.6667ZM7.91621 11.6667C5.84121 11.6667 4.16621 9.9917 4.16621 7.9167C4.16621 5.8417 5.84121 4.1667 7.91621 4.1667C9.99121 4.1667 11.6662 5.8417 11.6662 7.9167C11.6662 9.9917 9.99121 11.6667 7.91621 11.6667Z"/>
+                </svg>
+            </form>
+            <div class="avatar-out">
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-4.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Kathryn Murphy</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $1,902.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-4.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Kathryn Murphy</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $1,902.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-5.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Albert Flores</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--blue">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C7 2.55228 6.55228 3 6 3C5.44772 3 5 2.55228 5 2C5 1.44772 5.44772 1 6 1C6.55228 1 7 1.44772 7 2ZM5.025 4.29505L3.015 2.27505H3.01L2.855 2.11505L2.145 2.82005L4.155 4.84505L4.16 4.84005L4.315 5.00005L5.025 4.29505ZM6.9715 4.30855L9.174 2.11255L9.88 2.82005L7.6775 5.01655L6.9715 4.30855ZM5.005 7.68005L4.295 6.97505L2.28 8.98005L2.12 9.14505L2.825 9.85005L4.84 7.84005L5.005 7.68005ZM9.88 9.15005L7.885 7.14505L7.705 6.97005L7 7.67505L8.995 9.68005L9.17 9.85505L9.88 9.15005ZM2 7C2.55228 7 3 6.55228 3 6C3 5.44772 2.55228 5 2 5C1.44772 5 1 5.44772 1 6C1 6.55228 1.44772 7 2 7ZM10 7C10.5523 7 11 6.55228 11 6C11 5.44772 10.5523 5 10 5C9.44772 5 9 5.44772 9 6C9 6.55228 9.44772 7 10 7ZM7 10C7 10.5523 6.55228 11 6 11C5.44772 11 5 10.5523 5 10C5 9.44772 5.44772 9 6 9C6.55228 9 7 9.44772 7 10Z"/>
+                            </svg>
+                            Marketing
+                        </span>
+                        <span class="avatar__price avatar__price--zero">
+                            $0.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-2.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Jane Cooper</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $762.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-6.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Ronald Richards</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--orange">
+                            <svg class="avatar-label__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8V4C5 3.45 5.445 3 6 3H10.5V2.5C10.5 1.95 10.05 1.5 9.5 1.5H2.5C1.945 1.5 1.5 1.95 1.5 2.5V9.5C1.5 10.05 1.945 10.5 2.5 10.5H9.5C10.05 10.5 10.5 10.05 10.5 9.5V9H6C5.445 9 5 8.55 5 8ZM6.5 4C6.225 4 6 4.225 6 4.5V7.5C6 7.775 6.225 8 6.5 8H11V4H6.5ZM8 6.75C7.585 6.75 7.25 6.415 7.25 6C7.25 5.585 7.585 5.25 8 5.25C8.415 5.25 8.75 5.585 8.75 6C8.75 6.415 8.415 6.75 8 6.75Z"/>
+                            </svg>                            
+                            Sales
+                        </span>
+                        <span class="avatar__price avatar__price--zero">
+                            $0.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Ralph Edwards</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--orange">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8V4C5 3.45 5.445 3 6 3H10.5V2.5C10.5 1.95 10.05 1.5 9.5 1.5H2.5C1.945 1.5 1.5 1.95 1.5 2.5V9.5C1.5 10.05 1.945 10.5 2.5 10.5H9.5C10.05 10.5 10.5 10.05 10.5 9.5V9H6C5.445 9 5 8.55 5 8ZM6.5 4C6.225 4 6 4.225 6 4.5V7.5C6 7.775 6.225 8 6.5 8H11V4H6.5ZM8 6.75C7.585 6.75 7.25 6.415 7.25 6C7.25 5.585 7.585 5.25 8 5.25C8.415 5.25 8.75 5.585 8.75 6C8.75 6.415 8.415 6.75 8 6.75Z"/>
+                            </svg>                            
+                            Sales
+                        </span>
+                        <span class="avatar__price">
+                            $2,794.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-4.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Kathryn Murphy</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $1,902.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-4.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Kathryn Murphy</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $1,902.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-5.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Albert Flores</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--blue">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C7 2.55228 6.55228 3 6 3C5.44772 3 5 2.55228 5 2C5 1.44772 5.44772 1 6 1C6.55228 1 7 1.44772 7 2ZM5.025 4.29505L3.015 2.27505H3.01L2.855 2.11505L2.145 2.82005L4.155 4.84505L4.16 4.84005L4.315 5.00005L5.025 4.29505ZM6.9715 4.30855L9.174 2.11255L9.88 2.82005L7.6775 5.01655L6.9715 4.30855ZM5.005 7.68005L4.295 6.97505L2.28 8.98005L2.12 9.14505L2.825 9.85005L4.84 7.84005L5.005 7.68005ZM9.88 9.15005L7.885 7.14505L7.705 6.97005L7 7.67505L8.995 9.68005L9.17 9.85505L9.88 9.15005ZM2 7C2.55228 7 3 6.55228 3 6C3 5.44772 2.55228 5 2 5C1.44772 5 1 5.44772 1 6C1 6.55228 1.44772 7 2 7ZM10 7C10.5523 7 11 6.55228 11 6C11 5.44772 10.5523 5 10 5C9.44772 5 9 5.44772 9 6C9 6.55228 9.44772 7 10 7ZM7 10C7 10.5523 6.55228 11 6 11C5.44772 11 5 10.5523 5 10C5 9.44772 5.44772 9 6 9C6.55228 9 7 9.44772 7 10Z"/>
+                            </svg>
+                            Marketing
+                        </span>
+                        <span class="avatar__price avatar__price--zero">
+                            $0.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-2.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Jane Cooper</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $762.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-6.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Ronald Richards</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--orange">
+                            <svg class="avatar-label__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8V4C5 3.45 5.445 3 6 3H10.5V2.5C10.5 1.95 10.05 1.5 9.5 1.5H2.5C1.945 1.5 1.5 1.95 1.5 2.5V9.5C1.5 10.05 1.945 10.5 2.5 10.5H9.5C10.05 10.5 10.5 10.05 10.5 9.5V9H6C5.445 9 5 8.55 5 8ZM6.5 4C6.225 4 6 4.225 6 4.5V7.5C6 7.775 6.225 8 6.5 8H11V4H6.5ZM8 6.75C7.585 6.75 7.25 6.415 7.25 6C7.25 5.585 7.585 5.25 8 5.25C8.415 5.25 8.75 5.585 8.75 6C8.75 6.415 8.415 6.75 8 6.75Z"/>
+                            </svg>                            
+                            Sales
+                        </span>
+                        <span class="avatar__price avatar__price--zero">
+                            $0.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Ralph Edwards</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--orange">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8V4C5 3.45 5.445 3 6 3H10.5V2.5C10.5 1.95 10.05 1.5 9.5 1.5H2.5C1.945 1.5 1.5 1.95 1.5 2.5V9.5C1.5 10.05 1.945 10.5 2.5 10.5H9.5C10.05 10.5 10.5 10.05 10.5 9.5V9H6C5.445 9 5 8.55 5 8ZM6.5 4C6.225 4 6 4.225 6 4.5V7.5C6 7.775 6.225 8 6.5 8H11V4H6.5ZM8 6.75C7.585 6.75 7.25 6.415 7.25 6C7.25 5.585 7.585 5.25 8 5.25C8.415 5.25 8.75 5.585 8.75 6C8.75 6.415 8.415 6.75 8 6.75Z"/>
+                            </svg>                            
+                            Sales
+                        </span>
+                        <span class="avatar__price">
+                            $2,794.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-4.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Kathryn Murphy</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $1,902.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-4.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Kathryn Murphy</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $1,902.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-5.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Albert Flores</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--blue">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C7 2.55228 6.55228 3 6 3C5.44772 3 5 2.55228 5 2C5 1.44772 5.44772 1 6 1C6.55228 1 7 1.44772 7 2ZM5.025 4.29505L3.015 2.27505H3.01L2.855 2.11505L2.145 2.82005L4.155 4.84505L4.16 4.84005L4.315 5.00005L5.025 4.29505ZM6.9715 4.30855L9.174 2.11255L9.88 2.82005L7.6775 5.01655L6.9715 4.30855ZM5.005 7.68005L4.295 6.97505L2.28 8.98005L2.12 9.14505L2.825 9.85005L4.84 7.84005L5.005 7.68005ZM9.88 9.15005L7.885 7.14505L7.705 6.97005L7 7.67505L8.995 9.68005L9.17 9.85505L9.88 9.15005ZM2 7C2.55228 7 3 6.55228 3 6C3 5.44772 2.55228 5 2 5C1.44772 5 1 5.44772 1 6C1 6.55228 1.44772 7 2 7ZM10 7C10.5523 7 11 6.55228 11 6C11 5.44772 10.5523 5 10 5C9.44772 5 9 5.44772 9 6C9 6.55228 9.44772 7 10 7ZM7 10C7 10.5523 6.55228 11 6 11C5.44772 11 5 10.5523 5 10C5 9.44772 5.44772 9 6 9C6.55228 9 7 9.44772 7 10Z"/>
+                            </svg>
+                            Marketing
+                        </span>
+                        <span class="avatar__price avatar__price--zero">
+                            $0.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-2.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Jane Cooper</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $762.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-6.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Ronald Richards</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--orange">
+                            <svg class="avatar-label__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8V4C5 3.45 5.445 3 6 3H10.5V2.5C10.5 1.95 10.05 1.5 9.5 1.5H2.5C1.945 1.5 1.5 1.95 1.5 2.5V9.5C1.5 10.05 1.945 10.5 2.5 10.5H9.5C10.05 10.5 10.5 10.05 10.5 9.5V9H6C5.445 9 5 8.55 5 8ZM6.5 4C6.225 4 6 4.225 6 4.5V7.5C6 7.775 6.225 8 6.5 8H11V4H6.5ZM8 6.75C7.585 6.75 7.25 6.415 7.25 6C7.25 5.585 7.585 5.25 8 5.25C8.415 5.25 8.75 5.585 8.75 6C8.75 6.415 8.415 6.75 8 6.75Z"/>
+                            </svg>                            
+                            Sales
+                        </span>
+                        <span class="avatar__price avatar__price--zero">
+                            $0.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Ralph Edwards</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--orange">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8V4C5 3.45 5.445 3 6 3H10.5V2.5C10.5 1.95 10.05 1.5 9.5 1.5H2.5C1.945 1.5 1.5 1.95 1.5 2.5V9.5C1.5 10.05 1.945 10.5 2.5 10.5H9.5C10.05 10.5 10.5 10.05 10.5 9.5V9H6C5.445 9 5 8.55 5 8ZM6.5 4C6.225 4 6 4.225 6 4.5V7.5C6 7.775 6.225 8 6.5 8H11V4H6.5ZM8 6.75C7.585 6.75 7.25 6.415 7.25 6C7.25 5.585 7.585 5.25 8 5.25C8.415 5.25 8.75 5.585 8.75 6C8.75 6.415 8.415 6.75 8 6.75Z"/>
+                            </svg>                            
+                            Sales
+                        </span>
+                        <span class="avatar__price">
+                            $2,794.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-4.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Kathryn Murphy</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $1,902.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-4.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Kathryn Murphy</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $1,902.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-5.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Albert Flores</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--blue">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C7 2.55228 6.55228 3 6 3C5.44772 3 5 2.55228 5 2C5 1.44772 5.44772 1 6 1C6.55228 1 7 1.44772 7 2ZM5.025 4.29505L3.015 2.27505H3.01L2.855 2.11505L2.145 2.82005L4.155 4.84505L4.16 4.84005L4.315 5.00005L5.025 4.29505ZM6.9715 4.30855L9.174 2.11255L9.88 2.82005L7.6775 5.01655L6.9715 4.30855ZM5.005 7.68005L4.295 6.97505L2.28 8.98005L2.12 9.14505L2.825 9.85005L4.84 7.84005L5.005 7.68005ZM9.88 9.15005L7.885 7.14505L7.705 6.97005L7 7.67505L8.995 9.68005L9.17 9.85505L9.88 9.15005ZM2 7C2.55228 7 3 6.55228 3 6C3 5.44772 2.55228 5 2 5C1.44772 5 1 5.44772 1 6C1 6.55228 1.44772 7 2 7ZM10 7C10.5523 7 11 6.55228 11 6C11 5.44772 10.5523 5 10 5C9.44772 5 9 5.44772 9 6C9 6.55228 9.44772 7 10 7ZM7 10C7 10.5523 6.55228 11 6 11C5.44772 11 5 10.5523 5 10C5 9.44772 5.44772 9 6 9C6.55228 9 7 9.44772 7 10Z"/>
+                            </svg>
+                            Marketing
+                        </span>
+                        <span class="avatar__price avatar__price--zero">
+                            $0.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-2.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Jane Cooper</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--green">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 4.5L7.97 3.465L9 3L7.97 2.535L7.5 1.5L7.04 2.535L6 3L7.04 3.465L7.5 4.5ZM10.5 4C9.775 4 9.37 4.72 9.535 5.255L7.76 7.035C7.61 6.99 7.39 6.99 7.24 7.035L5.965 5.76C6.135 5.225 5.73 4.5 5 4.5C4.275 4.5 3.865 5.22 4.035 5.76L1.755 8.035C1.22 7.87 0.5 8.275 0.5 9C0.5 9.55 0.95 10 1.5 10C2.225 10 2.63 9.28 2.465 8.745L4.74 6.465C4.89 6.51 5.11 6.51 5.26 6.465L6.535 7.74C6.365 8.275 6.77 9 7.5 9C8.225 9 8.635 8.28 8.465 7.74L10.245 5.965C10.78 6.13 11.5 5.725 11.5 5C11.5 4.45 11.05 4 10.5 4ZM2 4.5L1.75 5.5L1.5 4.5L0.5 4.25L1.5 4L1.75 3L2 4L3 4.25L2 4.5Z"/>
+                            </svg>                            
+                            Design
+                        </span>
+                        <span class="avatar__price">
+                            $762.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar-6.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Ronald Richards</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--orange">
+                            <svg class="avatar-label__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8V4C5 3.45 5.445 3 6 3H10.5V2.5C10.5 1.95 10.05 1.5 9.5 1.5H2.5C1.945 1.5 1.5 1.95 1.5 2.5V9.5C1.5 10.05 1.945 10.5 2.5 10.5H9.5C10.05 10.5 10.5 10.05 10.5 9.5V9H6C5.445 9 5 8.55 5 8ZM6.5 4C6.225 4 6 4.225 6 4.5V7.5C6 7.775 6.225 8 6.5 8H11V4H6.5ZM8 6.75C7.585 6.75 7.25 6.415 7.25 6C7.25 5.585 7.585 5.25 8 5.25C8.415 5.25 8.75 5.585 8.75 6C8.75 6.415 8.415 6.75 8 6.75Z"/>
+                            </svg>                            
+                            Sales
+                        </span>
+                        <span class="avatar__price avatar__price--zero">
+                            $0.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Ralph Edwards</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--orange">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8V4C5 3.45 5.445 3 6 3H10.5V2.5C10.5 1.95 10.05 1.5 9.5 1.5H2.5C1.945 1.5 1.5 1.95 1.5 2.5V9.5C1.5 10.05 1.945 10.5 2.5 10.5H9.5C10.05 10.5 10.5 10.05 10.5 9.5V9H6C5.445 9 5 8.55 5 8ZM6.5 4C6.225 4 6 4.225 6 4.5V7.5C6 7.775 6.225 8 6.5 8H11V4H6.5ZM8 6.75C7.585 6.75 7.25 6.415 7.25 6C7.25 5.585 7.585 5.25 8 5.25C8.415 5.25 8.75 5.585 8.75 6C8.75 6.415 8.415 6.75 8 6.75Z"/>
+                            </svg>                            
+                            Sales
+                        </span>
+                        <span class="avatar__price">
+                            $2,794.00
+                        </span>
+                    </span>
+                </a>
+                <a href="users-inner.html" class="avatar d-block text-decoration-none">
+                    <span class="d-flex align-items-center avatar__top">
+                        <span class="avatar__pic d-inline-flex">
+                            <img src="images/temp/avatar.png" alt="">
+                        </span>
+                        <span class="avatar__title font-inter-md">Ralph Edwards</span>
+                    </span>
+                    <span class="d-flex align-items-center avatar__bottom justify-content-between">
+                        <span class="label label--orange">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 8V4C5 3.45 5.445 3 6 3H10.5V2.5C10.5 1.95 10.05 1.5 9.5 1.5H2.5C1.945 1.5 1.5 1.95 1.5 2.5V9.5C1.5 10.05 1.945 10.5 2.5 10.5H9.5C10.05 10.5 10.5 10.05 10.5 9.5V9H6C5.445 9 5 8.55 5 8ZM6.5 4C6.225 4 6 4.225 6 4.5V7.5C6 7.775 6.225 8 6.5 8H11V4H6.5ZM8 6.75C7.585 6.75 7.25 6.415 7.25 6C7.25 5.585 7.585 5.25 8 5.25C8.415 5.25 8.75 5.585 8.75 6C8.75 6.415 8.415 6.75 8 6.75Z"/>
+                            </svg>                            
+                            Sales
+                        </span>
+                        <span class="avatar__price">
+                            $2,794.00
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="js/bootstrap5.3.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
